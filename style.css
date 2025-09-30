@@ -452,13 +452,27 @@ section {
 
 #contact {
     padding: 4rem 2rem;
-    text-align: center;
+    display: flex;
+    align-items: center;
+    gap: 2rem;
+    justify-content: center;
+    text-align: left;
+    flex-wrap: wrap;
+}
+
+.contact-pic {
+    box-shadow: 0 8px 25px rgba(0, 0, 0, 0.15);
+    object-fit: cover;
+    width: 400px;
+    height: 400px;
+    border-radius: 12px;
+    margin: 0;
 }
 
 .contact-card {
     background: #fff;
     max-width: 600px;
-    margin: 0 auto;
+    margin: 0;
     border-radius: 1rem;
     padding: 2rem;
     box-shadow: 0 4px 10px rgba(0,0,0,0.1);
@@ -497,6 +511,32 @@ section {
 .contact-link:hover {
     background: #eee;
     transform: translateY(-3px);
+}
+
+/* Ensure section title spans full width when contact uses flex layout */
+.section-title {
+    width: 100%;
+    text-align: center;
+    margin-bottom: 1rem;
+}
+
+/* Responsive: stack picture above card on smaller screens */
+@media (max-width: 768px) {
+    #contact {
+        flex-direction: column;
+        text-align: center;
+        padding: 2rem 1rem;
+    }
+    .contact-pic {
+        width: 300px;
+        height: 300px;
+        margin-bottom: 1rem;
+    }
+    .contact-card {
+        margin: 0 auto;
+        width: 100%;
+        max-width: 700px;
+    }
 }
 
 /* FLOATING ACTION BUTTON */
