@@ -180,7 +180,6 @@ section {
     border-radius: 0;
 }
 
-
 .section__text {
     align-self: center;
     text-align: center;
@@ -292,7 +291,16 @@ section {
     object-fit: cover;
     width: 400px;
     height: 400px;
+    border-radius: 12px; 
     margin-bottom: 1rem;
+}
+
+/* Dedicated container for the About section picture (centered below text) */
+.about-pic-container {
+    display: flex;
+    width: 100%;
+    justify-content: center;
+    margin: 0;
 }
 
 /* Details Section */
