@@ -1,9 +1,36 @@
 function toggleMenu() {
     const menu = document.querySelector(".menu-links");
     const icon = document.querySelector(".hamburger-icon");
-    menu.classList.toggle("open");
+    const overlay = document.querySelector('.menu-overlay');
+    if (!menu || !icon) return;
+    const isOpen = menu.classList.toggle("open");
     icon.classList.toggle("open");
+    // If the trigger is a button, update aria-expanded
+    try {
+        if (icon.tagName === 'BUTTON') icon.setAttribute('aria-expanded', String(isOpen));
+    } catch (e) {
+        // ignore
+    }
+    if (overlay) {
+        overlay.classList.toggle('open');
+    }
 }
+
+// close menu on Escape key for accessibility
+window.addEventListener('keydown', (e) => {
+    if (e.key === 'Escape') {
+        const menu = document.querySelector(".menu-links");
+        const icon = document.querySelector(".hamburger-icon");
+        const overlay = document.querySelector('.menu-overlay');
+        if (menu && menu.classList.contains('open')) {
+            menu.classList.remove('open');
+            icon.classList.remove('open');
+            if (icon.tagName === 'BUTTON') icon.setAttribute('aria-expanded', 'false');
+            if (overlay) overlay.classList.remove('open');
+        }
+    }
+});
+
 // Floating Action Button logic
 const fab = document.getElementById('back-to-hero');
 function checkIfAtBottom() {

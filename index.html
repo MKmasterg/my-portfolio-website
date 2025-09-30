@@ -22,11 +22,11 @@
     <nav id="hamburger-nav">
             <div class="logo">Mohammadsaleh Molazade</div>
             <div class="hamburger-menu">
-                <div class="hamburger-icon" onclick="toggleMenu()">
+                <button class="hamburger-icon" aria-expanded="false" aria-controls="mobile-menu" aria-label="Toggle menu" onclick="toggleMenu()">
                     <span></span>
                     <span></span>
                     <span></span>
-                </div>
+                </button>
                 <div class="menu-links">
                     <ul>
                         <li><a href="#about" onclick="toggleMenu()">About</a></li>
@@ -36,6 +36,7 @@
                     </ul>
                 </div>
             </div>
+            <div class="menu-overlay" onclick="toggleMenu()" aria-hidden="true"></div>
     </nav>
     <section id="profile">
         <div class="section__pic-container">
