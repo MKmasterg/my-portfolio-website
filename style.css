@@ -365,3 +365,41 @@ section {
 .icon.arrow:hover {
     transform: translateY(6px);
 }
+
+/* TECHNOLOGY SECTION */
+.section__text_p1 {
+    text-align: center;
+    font-size: 1rem;
+    color: #555;
+    margin-bottom: 0.5rem;
+}
+#technology .about-containers {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 1.5rem;
+    margin-top: 2rem;
+}
+
+#technology .details-container {
+    text-align: center;
+    padding: 1.2rem;
+    background: #fff;
+    border-radius: 12px;
+    box-shadow: 0 4px 8px rgba(0,0,0,0.08);
+    transition: transform 0.2s ease-in-out;
+}
+
+#technology .details-container:hover {
+    transform: translateY(-5px);
+}
+
+#technology .details-container h3 {
+    margin-top: 0.5rem;
+    font-size: 1.2rem;
+}
+
+#technology .details-container p {
+    font-size: 0.9rem;
+    color: #555;
+    margin-top: 0.3rem;
+}

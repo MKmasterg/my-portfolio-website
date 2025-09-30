@@ -7,3 +7,9 @@
         display: flex;
     }
 }
+
+@media (max-width: 768px) {
+    #technology .about-containers {
+        grid-template-columns: 1fr;
+    }
+}
