@@ -12,70 +12,22 @@
     #technology .about-containers {
         grid-template-columns: 1fr;
     }
-}
 
-/* Medium screens: reduce large side margins and scale images */
-@media (max-width: 1200px) {
-    section {
-        margin: 0 4rem;
+    #contact {
+        text-align: center;
+        padding: 2rem 1rem;
     }
-    #profile {
-        gap: 3rem;
-    }
-    .section__pic-container, .about-pic, .contact-pic {
+    .contact-pic {
         width: 300px;
         height: 300px;
+        margin-bottom: 1rem;
     }
-    #projects .about-containers {
-        margin-left: 2rem;
-        margin-right: 2rem;
-    }
-}
-
-/* Tablet: stack some elements, make grids single-column where helpful */
-@media (max-width: 992px) {
-    section {
-        margin: 0 2rem;
-    }
-
-    /* Stack profile vertically */
-    #profile {
-        flex-direction: column;
-        height: auto;
-        padding: 2rem 0;
-        gap: 1.5rem;
-        text-align: center;
-    }
-    .section__pic-container {
-        width: 260px;
-        height: 260px;
+    .contact-card {
         margin: 0 auto;
-    }
-
-    /* Projects: single column, full-width cards */
-    #projects .about-containers {
-        grid-template-columns: 1fr;
-        gap: 1rem;
-        margin-left: 0;
-        margin-right: 0;
-    }
-    #projects .details-container {
         width: 100%;
-    }
-    .project-pic {
-        height: 220px;
+        max-width: 700px;
     }
 
-    .title {
-        font-size: 2.25rem;
-    }
-    .section__text__p2 {
-        font-size: 1.25rem;
-    }
-}
-
-/* Mobile: tighter spacing, smaller images and fonts */
-@media (max-width: 768px) {
     section {
         margin: 0 1rem;
         padding-top: 3vh;
@@ -135,6 +87,64 @@
     }
     .contact-links {
         align-items: center;
+    }
+}
+
+/* Medium screens: reduce large side margins and scale images */
+@media (max-width: 1200px) {
+    section {
+        margin: 0 4rem;
+    }
+    #profile {
+        gap: 3rem;
+    }
+    .section__pic-container, .about-pic, .contact-pic {
+        width: 300px;
+        height: 300px;
+    }
+    #projects .about-containers {
+        margin-left: 2rem;
+        margin-right: 2rem;
+    }
+}
+
+@media (max-width: 992px) {
+    section {
+        margin: 0 0.7rem;
+    }
+
+    /* Stack profile vertically */
+    #profile {
+        flex-direction: column;
+        height: auto;
+        padding: 2rem 0;
+        gap: 1.5rem;
+        text-align: center;
+    }
+    .section__pic-container {
+        width: 260px;
+        height: 260px;
+        margin: 0 auto;
+    }
+
+    /* Projects: single column, full-width cards */
+    #projects .about-containers {
+        grid-template-columns: 1fr;
+        gap: 1rem;
+        margin-left: 0;
+    }
+    #projects .details-container {
+        width: 100%;
+    }
+    .project-pic {
+        height: 220px;
+    }
+
+    .title {
+        font-size: 2.25rem;
+    }
+    .section__text__p2 {
+        font-size: 1.25rem;
     }
 }
 
