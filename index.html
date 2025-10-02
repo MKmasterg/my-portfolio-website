@@ -1,4 +1,5 @@
 <!DOCTYPE html>
+<link rel="icon" href="./assets/logo.ico" type="image/x-icon">
 <html lang="en">
 <head>
     <meta charset="UTF-8">
@@ -20,23 +21,22 @@
         </div>
     </nav>
     <nav id="hamburger-nav">
-            <div class="logo">Mohammadsaleh Molazade</div>
-            <div class="hamburger-menu">
-                <button class="hamburger-icon" aria-expanded="false" aria-controls="mobile-menu" aria-label="Toggle menu" onclick="toggleMenu()">
-                    <span></span>
-                    <span></span>
-                    <span></span>
-                </button>
-                <div class="menu-links">
-                    <ul>
-                        <li><a href="#about" onclick="toggleMenu()">About</a></li>
-                        <li><a href="#technology" onclick="toggleMenu()">Technology</a></li>
-                        <li><a href="#projects" onclick="toggleMenu()">Projects</a></li>
-                        <li><a href="#contact" onclick="toggleMenu()">Contact</a></li>
-                    </ul>
-                </div>
-            </div>
-            <div class="menu-overlay" onclick="toggleMenu()" aria-hidden="true"></div>
+        <div class="logo">Mohammadsaleh Molazade</div>
+        <button class="hamburger-icon-new" aria-label="Open menu" aria-expanded="false">
+            <svg width="32" height="32" viewBox="0 0 32 32" fill="none" xmlns="http://www.w3.org/2000/svg">
+                <rect y="7" width="32" height="3" rx="1.5" fill="#222"/>
+                <rect y="15" width="32" height="3" rx="1.5" fill="#222"/>
+                <rect y="23" width="32" height="3" rx="1.5" fill="#222"/>
+            </svg>
+        </button>
+        <div class="menu-links-new">
+            <ul>
+                <li><a href="#about">About</a></li>
+                <li><a href="#technology">Technology</a></li>
+                <li><a href="#projects">Projects</a></li>
+                <li><a href="#contact">Contact</a></li>
+            </ul>
+        </div>
     </nav>
     <section id="profile">
         <div class="section__pic-container">
