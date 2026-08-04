@@ -4,7 +4,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>My Portfolio</title>
+    <title>Mohammadsaleh Molazade | Portfolio</title>
     <link rel="stylesheet" href="style.css">
     <link rel="stylesheet" href="mediaqueries.css">
 </head>
@@ -45,7 +45,7 @@
         <div class="section__text">
             <p class="section__text__p1">Hello I'm</p>
             <h1 class="title">Mohammadsaleh Molazade</h1>
-            <p class="section__text__p2">Computer Science Student | Cybersecurity Enthusiast</p>
+            <p class="section__text__p2">Computer Science Student | Cybersecurity &amp; AI Enthusiast</p>
             <div class="btn-container">
                 <button class="btn btn-color-2" onclick="window.open('./assets/cv-os.pdf')">Download CV</button>
                 <button class="btn btn-color-1" onclick="window.location.href='./#contact'">Contact Me</button>
@@ -69,9 +69,9 @@
             </div>
             <div class="text-container">
                 <p>
-                    A curious mind fascinated by how systems break—and how to protect them. <br>
-                    I'm passionate about programming and exploring new things; learning is fun! <br>
-                    I love scripting and automating things and currently I like to dive in the wonderful world of Cybersecurity.
+                    Hi! I'm Saleh, a Computer Science student at Amirkabir University of Technology (Tehran Polytechnic).
+                    I'm passionate about programming, cybersecurity, and AI — and I love scripting and automating things.
+                    Learning is bottomless, and I'm always eager to explore new ideas and grow.
                 </p>
             </div>
             <div class="about-details-container">
@@ -81,31 +81,47 @@
                         <h3>Education</h3>
                         <div>
                         <p>B.Sc. in Computer Science (expected Dec 2027)
-                        <br> <div class="p-description">Amirkabir University of Technology (Tehran Polytechnic) </div>
+                        <br><span class="p-description">Amirkabir University of Technology (Tehran Polytechnic)</span>
                         </p>
                         <br>
                         <p>
-                        NODET High School (Jun 2023)
-                        <br><div class="p-description">National Organization for Development of Exceptional Talents — SAMPAD</div></p>
+                        High School Diploma, Mathematics and Physics (Jun 2023)
+                        <br><span class="p-description">National Organization for Development of Exceptional Talents (SAMPAD)</span></p>
                     </div>
 
                     <div class="details-container">
                         <img src="./assets/experience.png" alt="Experience icon" class="icon placeholder">
                         <h3>Experience</h3>
                         <div>
-                        <p>Teaching Assistant — Data Structures & Algorithms (Fall 2025)
-                        <br> <div class="p-description">Amirkabir University of Technology | Instructed by Dr. Ghorbanali </div>
+                        <p>Software Engineer
+                        <br><span class="p-description">Divar · Feb 2026 – Present · Tehran</span>
                         </p>
                         <br>
-                        <p>Teaching Assistant — Advanced Programming Workshop (Spring 2025)
-                        <br><div class="p-description">Amirkabir University of Technology | Instructed by Prof. Ghatee</div></p>
+                        <p>Software Engineer Internship
+                        <br><span class="p-description">Divar · Oct 2025 – Feb 2026 · Tehran</span>
+                        </p>
+                        <br>
+                        <p>Teaching Assistant — Advanced Programming Workshop (Java)
+                        <br><span class="p-description">Amirkabir University of Technology · Feb 2026 – Jul 2026 · Dr. Ahmadian &amp; Dr. Behnam Yousefimehr</span>
+                        </p>
+                        <br>
+                        <p>Teaching Assistant — Data Structures &amp; Algorithms
+                        <br><span class="p-description">Amirkabir University of Technology · Aug 2025 – Feb 2026 · Dr. Zahra Ghorbanali</span>
+                        </p>
+                        <br>
+                        <p>Teaching Assistant — Advanced Programming Workshop (Java)
+                        <br><span class="p-description">Amirkabir University of Technology · Jan 2025 – Jun 2025 · Prof. Mehdi Ghatee &amp; Dr. Behnam Yousefimehr</span></p>
                     </div>
 
                     <div class="details-container">
-                        <img src="./assets/award.png" alt="Experience icon" class="icon placeholder">
-                        <h3>Awards</h3>
-                        <p>Samsung Solve for Tomorrow - 3rd place winner <br>
-                        <div class="p-description">Design thinking competition (Team PENTA)</div>
+                        <img src="./assets/award.png" alt="Awards icon" class="icon placeholder">
+                        <h3>Awards &amp; Certifications</h3>
+                        <p>Samsung Solve for Tomorrow — 3rd place winner
+                        <br><span class="p-description">Design thinking competition (Team PENTA)</span>
+                        </p>
+                        <br>
+                        <p>Cybersecurity Fundamentals · OWASP Top 10 Security Threats (SKF100)
+                        <br><span class="p-description">Docker &amp; Kubernetes for the Absolute Beginner</span>
                         </p>
                     </div>
 
@@ -160,6 +176,19 @@
                 <h3>Git</h3>
                 <p>Version control and collaborative development.</p>
             </div>
+            <div class="details-container">
+                <div class="tech-icon-group">
+                    <img src="./assets/kubernetes.svg" alt="Kubernetes icon" class="icon placeholder">
+                </div>
+                <h3>Docker &amp; Kubernetes</h3>
+                <p>Containerization and orchestration for modern deployments.</p>
+            </div>
+
+            <div class="details-container">
+                <img src="./assets/llmops.png" alt="LLMOps icon" class="icon placeholder">
+                <h3>LLMOps &amp; Fine-Tuning</h3>
+                <p>Large language model operations and model fine-tuning workflows.</p>
+            </div>
             
         </div>
         <img src="./assets/arrow.png" alt="Arrow icon" class="icon arrow" onclick="location.href='./#projects'">
@@ -209,29 +238,50 @@
                 </div>
             </div>
 
+            <!-- Project 4 -->
+            <div class="details-container">
+                <img src="./assets/coffee-marketplace.jpg" alt="Coffee Market Place" class="project-pic placeholder">
+                <h3>Coffee Market Place</h3>
+                <p>
+                A Django marketplace where sellers and supervisors manage markets and stock, while customers browse and place orders. Supports role-based workflows, admin market approval, and environment-based configuration.
+                </p>
+                <div class="btn-container">
+                <button class="btn btn-color-2" onclick="window.open('https://github.com/MKmasterg/coffee-market-place')">GitHub</button>
+                <button class="btn btn-color-1" onclick="window.open('https://mkmasterg.pythonanywhere.com/')">Live Demo</button>
+                </div>
+            </div>
+
             </div>
         </div>
         <img src="./assets/arrow.png" alt="Arrow icon" class="icon arrow" onclick="location.href='./#contact'">
     </section>
     <section id="contact">
         <h2 class="section-title">Contact Me</h2>
-        <img src="./assets/contact-me-picture.jpg" alt="Saleh's picture" class="contact-pic">
+        <div class="contact-content">
+            <img src="./assets/contact-me-picture.jpg" alt="Saleh's picture" class="contact-pic">
             <div class="contact-card">
-                <p>If you'd like to get in touch, feel free to reach out:</p>
+                <p>Open to exciting opportunities and collaborations in the tech industry. Feel free to reach out:</p>
                 <div class="contact-links">
                     <div class="contact-link">
                         <img src="./assets/email.png" alt="Email icon" class="icon placeholder" />
                         <a href="mailto:molioo1298@gmail.com">molioo1298@gmail.com</a>
                     </div>
                     <div class="contact-link">
+                        <svg class="icon contact-phone-icon" width="32" height="32" viewBox="0 0 24 24" fill="none" aria-hidden="true">
+                            <path d="M6.62 10.79a15.05 15.05 0 006.59 6.59l2.2-2.2a1 1 0 011.01-.24 11.36 11.36 0 003.58.57 1 1 0 011 1V20a1 1 0 01-1 1A17 17 0 013 4a1 1 0 011-1h3.5a1 1 0 011 1 11.36 11.36 0 00.57 3.58 1 1 0 01-.24 1.01l-2.2 2.2z" fill="#333"/>
+                        </svg>
+                        <a href="tel:+989057403783">+98 905 740 3783</a>
+                    </div>
+                    <div class="contact-link">
                         <img src="./assets/linkedin.png" alt="LinkedIn icon" class="icon placeholder" />
-                        <a href="https://linkedin.com/in/saleh-molazade" target="_blank">LinkedIn</a>
+                        <a href="https://linkedin.com/in/saleh-molazade" target="_blank" rel="noopener">LinkedIn</a>
                     </div>
                     <div class="contact-link">
                         <img src="./assets/github.png" alt="GitHub icon" class="icon placeholder" />
-                        <a href="https://github.com/MKmasterg" target="_blank">GitHub</a>
+                        <a href="https://github.com/MKmasterg" target="_blank" rel="noopener">GitHub</a>
                     </div>
                 </div>
+            </div>
         </div>
     </section>
     <button id="back-to-hero" class="fab" aria-label="Back to hero">↑</button>
